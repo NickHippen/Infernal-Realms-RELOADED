@@ -1,0 +1,13 @@
+1: #Level Required
+  1: # ID
+    Name: Mean Bandits
+    Objectives:
+      1:
+          1: Talk#Jerry#Bandits have been harrassing the villagers!\\Could you defeat 10 of them to scare them off\\and bring back some of the stolen goods?
+      2:
+          1: Kill#10#Bandit[1-5]
+          2: Deliver#5#Stolen Goods#Jerry#Great! Here, have this item that was stolen by the bandits.\\I have a feeling you could use this more than us!#Don't forget to bring back the stolen goods!\\We're running really low on supplies because of the bandits...
+    Experience: 1000
+    Money: 0,20,0
+    Reward:
+        - ii tier $name Uncommon 1 4

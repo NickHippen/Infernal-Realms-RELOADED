@@ -1,0 +1,60 @@
+name: Infernal Realms RELOADED
+main: net.infernalrealms.general.InfernalRealms
+version: 0.0.8 Alpha
+depend: [Citizens, WorldGuard, WorldEdit, HolographicDisplays]
+description: >
+             The Infernal Realms RELOADED Server Plugin.
+commands:
+  stats:
+    description: View player stats.
+  choose:
+    description: Choose class.
+  skills:
+    description: Opens Skills Menu.
+  logout:
+    description: Logs out
+  ii:
+    description: Infernal Items Base Command
+  im:
+    description: Infernal Mobs Base Command
+  infernalmobs:
+    description: Infernal Mobs Base Command
+  infernalmobs:
+    description: Infernal Skills Base Command
+  ie:
+    description: Infernal Economy Base Command
+  ip:
+    description: Infernal IP Base Command
+  mount:
+    description: Infernal Skills Base Command
+  party:
+    description: Infernal Party Base Command
+  trade:
+    description: Infernal Trade Base Command
+  accepttrade:
+    description: Accept Trade
+  test:
+    description: Infernal Test Base Command
+  testeffect:
+    description: Effect Testing
+  testsound:
+    description: Sound Testing
+  testcolor:
+    description: Color Testing
+  inpc:
+    description: NPC Base Command
+  leavedungeon:
+    description: Leaves your current dungeon.
+  pickaxe:
+    description: Pickaxe
+  quests:
+    description: Open quest log
+  particles:
+    description: Open particles manager
+  ia:
+    description: Infernal Admin Commands
+  iplatform:
+    description: Infernal Platform Base Command
+    aliases: [iplat, imp]
+  ib:
+    description: Infernal Blacksmithing Commands

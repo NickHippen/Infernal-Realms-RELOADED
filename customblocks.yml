@@ -1,0 +1,10 @@
+Block ID:
+  18#0: # Oak Leaves
+    Nora Plant:
+      # Item name in misc. file
+      Drop: NoraLeaf
+      Amount: 1-1
+      # Time in seconds
+      Respawn: 20
+      Regions:
+      - 'NoraPlantRegion1'

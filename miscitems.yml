@@ -1,0 +1,17 @@
+FenorsPouch:
+  Material: 351,0
+  Name: "Fenor's Pouch"
+  Lore:
+    - "A pouch given to you by Angar."
+    - "Bring this to Fenor in the inn."
+  Tradeable: false
+  Removable: false
+LeatherStrap:
+  Material: 420,0
+  Name: "Leather Strap"
+  Tradeable: true
+  Removeable: true
+  Enchanted: true
+  Blacksmithing Recipe:
+    - LeatherScrap 2
+  Sell: 0,0,5

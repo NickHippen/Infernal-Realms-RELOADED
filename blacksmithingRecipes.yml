@@ -1,0 +1,6 @@
+LeatherPadx1:
+  Level: 0
+  Result: 'LeatherPad 1'
+  Recipe:
+    - 'LeatherStrap 2'
+    - 'ShortString 2'

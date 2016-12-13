@@ -1,0 +1,11 @@
+Uncommon 1-10:
+  Colors: $6$l
+  SocketColor:
+    - red
+    - yellow
+    - blue
+  Stats: 
+    - 1-10 Strength
+    - 1-10 Agility
+    - 1-10 Intelligence
+  Sellprices: 0,0,1-1,99,99

@@ -1,0 +1,15 @@
+BanditSpawn1:
+  World: world
+  Location: 10,100,10
+  Mobs: 1
+  DespawnRange: 20
+  MaxSpawned: 3
+  RespawnRate: 10
+Dungeon Spawns:
+  BanditDungeonSpawn1:
+    World: world
+    Location: 10,100,10
+    Mobs: 1
+    DespawnRange: 20
+    MaxSpawned: 3
+    RespawnRate: 10

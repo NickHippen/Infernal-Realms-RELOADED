@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/main/java/net/infernalrealms/blacksmithing/BlacksmithingRecipeFactory.java=UTF-8
+encoding//src/main/java/net/infernalrealms/general/GeneralListener.java=UTF-8
+encoding//src/main/java/net/infernalrealms/gui/MountShopGUI.java=UTF-8
+encoding//src/main/java/net/infernalrealms/inventory/Trade.java=UTF-8
+encoding//src/main/java/net/infernalrealms/items/EquipmentBuilder.java=UTF-8
+encoding//src/main/java/net/infernalrealms/items/GemColor.java=UTF-8
+encoding//src/main/java/net/infernalrealms/items/InfernalItems.java=UTF-8
+encoding//src/main/java/net/infernalrealms/items/InfernalItemsRELOADED.java=UTF-8
+encoding//src/main/java/net/infernalrealms/items/ItemReader.java=UTF-8
+encoding//src/main/java/net/infernalrealms/player/PlayerClass.java=UTF-8
+encoding//src/main/java/net/infernalrealms/player/PlayerData.java=UTF-8
+encoding//src/main/java/net/infernalrealms/quests/DungeonQuest.java=UTF-8
+encoding//src/main/java/net/infernalrealms/quests/HardcodedQuest.java=UTF-8
+encoding//src/main/java/net/infernalrealms/skills/warrior/Leech.java=UTF-8
+encoding//src/main/java/net/infernalrealms/util/GeneralUtil.java=UTF-8

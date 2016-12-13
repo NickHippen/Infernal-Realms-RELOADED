@@ -1,0 +1,125 @@
+1:
+  Location:
+    World: 'Dungeon'
+    X: 100.12
+    Y: 16
+    Z: 1234.85563
+  Level: 1
+  Stats:
+    Strength: 5
+    Intelligence: 5
+    Stamina: 5
+    Spirit: 5
+    Agility: 5
+    Health: 100
+    CurHealth: 100
+    Mana: 35
+    MaxMana: 35
+    AP: 0
+  Class: 'Warrior'
+  Money: 122312
+  Skills:
+    Charge: 1
+    Concussive Blows: 1
+  Quests:
+    1: 0#4,0
+    #QuestID: Part#ObjectiveProgress,ObjectiveProgress,... or COMPLETE if completed. Note that the Objective number is implied.
+  Particles:
+    Attack:
+    Follow:
+    Idle:
+    Damaged:
+  Inventory:
+    Main:
+      Helmet:
+      Chestplate:
+      Leggings:
+      Boots:
+      0:
+      1:
+      2:
+      3:
+      4:
+      5:
+      6:
+      7:
+      8:
+      9:
+      10:
+      11:
+      12:
+      13:
+      14:
+    Bank:
+      0: Item1
+      1: Item2
+      2: Item3
+    9:
+      Small Pouch:
+        1: Item1
+        2: Item2
+        3: Item3
+        4: Air
+        5: Air
+        6: Air
+        7: Air
+        8: Air
+        9: Air
+    18:
+      Snake Skin Bag:
+        1: Item1
+        2: Item2
+        3: Item3
+        4: Air
+        5: Air
+        6: Air
+        7: Air
+        8: Air
+        9: Air
+    27:
+      Torn Bag:
+        1: Item1
+        2: Item2
+        3: Item3
+        4: Air
+        5: Air
+        6: Air
+        7: Air
+        8: Air
+        9: Air
+Mount:
+  Armor: Item1
+  Speed:
+  Jump Strength:
+  MaxHungerLevel:
+  Hunger:
+  Color:
+  Style:
+  Variant:
+  Size:
+  AP:
+  Unlocked Styles:
+  - "Whitefield"
+  - "White"
+  Unlocked Variants:
+  - "Horse"
+  - "Skeleton Horse"
+  Unlocked Colors:
+  - "Brown"
+  Unlocked Sizes:
+  - "Normal"
+Mining:
+  Level: 1
+  Speed: 0
+  Luck: 0
+  DurabilityLevel: 0
+  Hilt:
+  Binding:
+  Reinforcement:
+  CurrentDurability:
+  Exp:
+BlacksmithingRecipes:
+  - [RECIPE_ITEM_HERE]
+  - [IN_LEVEL_ORDER]
+Homestead:
+  Tier: 1

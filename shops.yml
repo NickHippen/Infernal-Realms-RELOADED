@@ -1,0 +1,5 @@
+Enen Shop:
+# - " TYPE # NAME/IDENTIFIER      # COST # QUANTITY"
+  - "POTION#Small Elixir of Health#0,0,20#1"
+  - "ITEM#Flaming Katana#10,0,0#1"
+  - "MISC#NoraLeaves#0,1,0#5"

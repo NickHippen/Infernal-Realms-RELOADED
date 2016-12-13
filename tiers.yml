@@ -1,0 +1,9 @@
+Weapon:
+  of Glory:
+    Prefix: false
+    Damage Stats: 1.25-1.3
+    Stamina: 1.25-1.3
+    Agility: 0.8-0.85
+    Spirit: N/A
+    HP: 1.25-1.3
+    MP: N/A

@@ -1,0 +1,43 @@
+1:
+  Name: Bandit[1-5]
+  Type: Zombie
+  MobType: NORMAL
+  Health: 1
+  Damage:
+    - 1: 6.0
+    - 2: 8.0
+    - 3: 10.0
+    - 4: 12.0
+    - 5: 14.0
+  Exp:
+    - 1: 100
+    - 2: 120
+    - 3: 140
+    - 4: 160
+    - 5: 180
+  Money: 0,0,66-0,0,95
+  Equipment:
+    Head: playerhead:Flaming_Katana OR playerhead:#UUIDHERE#TEXTUREHERE
+    Chest: 299
+    Leggings: 300
+    Boots: 301
+    Hand: 268
+  Drops:
+    - TIER 0.02 DAMAGE#WEAPON,ARMOR#10-10#Uncommon
+    - ITEM 0.2 Flaming_Katana
+    - GEM 0.2 Uncommon 1-10
+    - MISC 0.2 FenorsPouch
+    - POTION 0.2 Potion_of_Health#1-2
+    - POUCH 0.2 SILK_BAG
+  Speed: 0.2
+  FollowRangeMult: 10
+  KnockBackResist: 10
+  Invisible: false
+  Baby: false
+  Sounds:
+    Speak: mob.skeleton.say
+    Hurt: DEFAULT
+    Death: DEFAULT
+    Walk: random.bothit
+  Spells:
+    - FIRE_BOLT -targeted=true -distance=5#Interval#100-200

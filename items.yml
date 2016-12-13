@@ -1,0 +1,31 @@
+Flaming Katana:
+  Colors: $6$l
+  Tradeable: false
+  ItemId: 283
+  Type: Sword
+  Damage: 12 to 15-50 to 55
+  Stats:
+  - 10-20 Strength
+  - 20-20 Agility
+  Socket:
+  - Blue 0-1
+  - Yellow 0-1
+  - Red 0-1
+  LevelReq: 100
+  Class: Warrior
+  Sell: 10,4,74
+Doom Axe:
+  Colors: $5$l
+  Tradeable: true
+  ItemId: 279
+  Type: Axe
+  Damage: 34 to 41-58 to 63
+  Stats:
+  - 12-36 Strength
+  - 3-12 Agility
+  - 44-56 Health
+  Socket:
+  - Yellow 0-2
+  - Red 1-2
+  LevelReq: 44
+  Sell: 6,5,54

@@ -1,0 +1,8 @@
+Potion of Health:
+  Material: 373,0
+  Hp: 100
+  HpDuration: 6
+  Mp: 75
+  MpDuration: 6
+  Level: 1
+  Sell: 0,0,10
