@@ -23,7 +23,7 @@ public class BlacksmithingBaseGUI {
 
 	public static void openBaseMenu(Player player) {
 		Inventory inv = Bukkit.createInventory(player, 27, BASE_NAME);
-
+		// Test commit #1
 		// Place empty slots
 		for (int slot : BASE_EMPTY_SLOTS) {
 			inv.setItem(slot, GeneralItems.BLANK_BLACK_GLASS_PANE);
