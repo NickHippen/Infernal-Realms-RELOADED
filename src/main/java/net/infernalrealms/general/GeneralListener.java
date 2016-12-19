@@ -39,6 +39,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 import org.bukkit.event.entity.EntityDamageEvent.DamageModifier;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.EntityInteractEvent;
@@ -75,6 +76,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.util.Vector;
 
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 
@@ -1059,6 +1061,17 @@ public class GeneralListener implements Listener {
 			} catch (NullPointerException e) {}
 			if (event.getEntity() instanceof Player) {
 				Player player = (Player) event.getEntity();
+				if (event.getCause() == DamageCause.FALL) {
+					double fallHeight = event.getDamage() + 3;
+					double dmgMult = fallHeight * 0.014;	// falling 70ish blocks will kill you
+					double dmgValue = Math.abs(player.getMaxHealth() * 0.03 - dmgMult * player.getMaxHealth());
+					player.sendMessage("You took " + dmgValue + " out of " + player.getMaxHealth() + " height is " + fallHeight);
+					if (fallHeight > 5.0) { // no damage if the fall is 5 blocks and under
+						event.setDamage(dmgValue);
+					} else {
+						event.setCancelled(true);
+					}
+				}
 				Stat.refreshHealthNumber(player);
 			}
 		}
