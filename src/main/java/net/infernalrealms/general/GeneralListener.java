@@ -821,42 +821,47 @@ public class GeneralListener implements Listener {
 						&& clickedWith.getType() == Material.INK_SACK) {
 					if (ItemReader.getRequiredLevel(clickedOn) >= ItemReader.getRequiredLevel(clickedWith)) {
 						if (clickedOn.getType() != Material.PAPER && clickedOn.hasItemMeta()) {
-							if (clickedWith.getItemMeta().getDisplayName().contains("Red")) {
+							if (clickedWith.getItemMeta().getDisplayName().contains("Red")) { //meme
 								ItemMeta clickedOnMeta = clickedOn.getItemMeta();
-								List<String> clickedOnLore = clickedOnMeta.getLore();
-								List<String> clickedWithLore = clickedWith.getItemMeta().getLore();
-								String statToAdd = "";
-								for (String line : clickedWithLore) {
-									if (line.contains("+")) {
-										statToAdd = ChatColor.stripColor(line);
-									}
-								}
-								int lineNumber = 0;
-								search: {
-									for (String line : clickedOnLore) {
-										if (line.equals(
-												ChatColor.RESET + "" + ChatColor.DARK_RED + " ▣ " + ChatColor.WHITE + "Red Socket")) {
-											clickedOnLore.set(lineNumber,
-													ChatColor.RESET + "" + ChatColor.DARK_RED + " ▣ " + ChatColor.GREEN + statToAdd);
-											if (clickedWith.getAmount() <= 1) {
-												iv.setCursor(new ItemStack(Material.AIR));
-											} else {
-												clickedWith.setAmount(clickedWith.getAmount() - 1);
-												iv.setCursor(clickedWith);
-											}
-											event.setCancelled(true);
-											// Effects
-											player.playSound(player.getLocation(), Sound.ENTITY_SLIME_ATTACK, 1F, 1F);
-											EffectsUtil.sendParticleToLocation(ParticleEffect.FIREWORKS_SPARK,
-													player.getLocation().add(0, 0.5D, 0), 0.35F, 0.35F, 0.35F, 0F, 15);
-											player.sendMessage(ChatColor.GREEN + "You have successfully added the socket to your item.");
-											break search;
+								if (InfernalItemsRELOADED.canSocket(clickedOn, clickedWith)) {
+									List<String> clickedOnLore = clickedOnMeta.getLore();
+									List<String> clickedWithLore = clickedWith.getItemMeta().getLore();
+									String statToAdd = "";
+									for (String line : clickedWithLore) {
+										if (line.contains("+")) {
+											statToAdd = ChatColor.stripColor(line);
 										}
-										lineNumber++;
 									}
+									int lineNumber = 0;
+									search: {
+										for (String line : clickedOnLore) {
+											if (line.equals(
+													ChatColor.RESET + "" + ChatColor.DARK_RED + " ▣ " + ChatColor.WHITE + "Red Socket")) {
+												clickedOnLore.set(lineNumber,
+														ChatColor.RESET + "" + ChatColor.DARK_RED + " ▣ " + ChatColor.GREEN + statToAdd);
+												if (clickedWith.getAmount() <= 1) {
+													iv.setCursor(new ItemStack(Material.AIR));
+												} else {
+													clickedWith.setAmount(clickedWith.getAmount() - 1);
+													iv.setCursor(clickedWith);
+												}
+												event.setCancelled(true);
+												// Effects
+												player.playSound(player.getLocation(), Sound.ENTITY_SLIME_ATTACK, 1F, 1F);
+												EffectsUtil.sendParticleToLocation(ParticleEffect.FIREWORKS_SPARK,
+														player.getLocation().add(0, 0.5D, 0), 0.35F, 0.35F, 0.35F, 0F, 15);
+												player.sendMessage(ChatColor.GREEN + "You have successfully added the gem to your item.");
+												break search;
+											}
+											lineNumber++;
+										}
+									}
+									clickedOnMeta.setLore(clickedOnLore);
+									clickedOn.setItemMeta(clickedOnMeta);
+								} else {
+									event.setCancelled(true);
+									player.sendMessage(ChatColor.RESET + "" + ChatColor.RED + "That gem and item aren't class compatible.");
 								}
-								clickedOnMeta.setLore(clickedOnLore);
-								clickedOn.setItemMeta(clickedOnMeta);
 							} else if (clickedWith.getItemMeta().getDisplayName().contains("Yellow")) {
 								ItemMeta clickedOnMeta = clickedOn.getItemMeta();
 								List<String> clickedOnLore = clickedOnMeta.getLore();
@@ -885,7 +890,7 @@ public class GeneralListener implements Listener {
 											player.playSound(player.getLocation(), Sound.ENTITY_SLIME_ATTACK, 1F, 1F);
 											EffectsUtil.sendParticleToLocation(ParticleEffect.FIREWORKS_SPARK,
 													player.getLocation().add(0, 0.5D, 0), 0.35F, 0.35F, 0.35F, 0F, 15);
-											player.sendMessage(ChatColor.GREEN + "You have successfully added the socket to your item.");
+											player.sendMessage(ChatColor.GREEN + "You have successfully added the gem to your item.");
 											break search;
 										}
 										lineNumber++;
@@ -920,7 +925,7 @@ public class GeneralListener implements Listener {
 											player.playSound(player.getLocation(), Sound.ENTITY_SLIME_ATTACK, 1F, 1F);
 											EffectsUtil.sendParticleToLocation(ParticleEffect.FIREWORKS_SPARK,
 													player.getLocation().add(0, 0.5D, 0), 0.35F, 0.35F, 0.35F, 0F, 15);
-											player.sendMessage(ChatColor.GREEN + "You have successfully added the socket to your item.");
+											player.sendMessage(ChatColor.GREEN + "You have successfully added the gem to your item.");
 											break search;
 										}
 										lineNumber++;
@@ -1065,7 +1070,7 @@ public class GeneralListener implements Listener {
 					double fallHeight = event.getDamage() + 3;
 					double dmgMult = fallHeight * 0.014;	// falling 70ish blocks will kill you
 					double dmgValue = Math.abs(player.getMaxHealth() * 0.03 - dmgMult * player.getMaxHealth());
-					player.sendMessage("You took " + dmgValue + " out of " + player.getMaxHealth() + " height is " + fallHeight);
+					// player.sendMessage("You took " + dmgValue + " out of " + player.getMaxHealth() + ". Height was " + fallHeight + ".");
 					if (fallHeight > 5.0) { // no damage if the fall is 5 blocks and under
 						event.setDamage(dmgValue);
 					} else {

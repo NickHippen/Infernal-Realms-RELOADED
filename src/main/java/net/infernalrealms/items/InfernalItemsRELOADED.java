@@ -357,6 +357,11 @@ public class InfernalItemsRELOADED {
 		List<String> equipLore = new ArrayList<>();
 		equipLore.add(ChatColor.RESET + "" + ChatColor.WHITE + "+" + (int) statAmount + " " + statType);
 		equipLore.add(ChatColor.RESET + "" + ChatColor.YELLOW + "Requires Level " + level);
+		if (gemColor.equals(GemColor.RED)) {
+			String playerClass = statType.equals("Strength") ? "Warrior" : (statType.equals("Dexterity") ? "Archer" : "Magician");
+			equipLore.add(ChatColor.RESET + "" + ChatColor.RED + "Class: " + playerClass);
+		}
+		//equiplore.add((ChatColor.RESET + "" + ChatColor.RED + "Class: " + 
 		equipLore.add(ChatColor.RESET + "" + ChatColor.WHITE + "Sell Price: " + GeneralUtil.getMoneyAsString((long) money));
 		equipMeta.setLore(equipLore);
 		equip.setItemMeta(equipMeta);
@@ -368,6 +373,18 @@ public class InfernalItemsRELOADED {
 			traits[1] = mob.getData().getLevel() + "-" + mob.getData().getLevel();
 		}
 		return generateGem(traits);
+	}
+	
+	public static boolean canSocket(ItemStack clickedOn, ItemStack clickedWith) {
+		String clickedOnReqClass = ItemReader.getRequiredClass(clickedOn);
+		String clickedWithReqClass = ItemReader.getRequiredClass(clickedWith);
+		if (clickedOnReqClass.equals(null) && clickedWithReqClass.equals(null)) {
+			return true;
+		}
+		if (clickedOnReqClass.equals(clickedWithReqClass)) {
+			return true;
+		} 
+		return false;
 	}
 
 }
