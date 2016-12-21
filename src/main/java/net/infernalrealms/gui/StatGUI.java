@@ -125,6 +125,7 @@ public class StatGUI {
 				+ ChatColor.GREEN + " (+" + playerData.getEquipStat(Stat.STAMINA) + ")");
 		charStatsLore.add(ChatColor.GRAY + "" + ChatColor.BOLD + "SPIRIT: " + ChatColor.WHITE + playerData.getTotalSpirit()
 				+ ChatColor.GREEN + " (+" + playerData.getEquipStat(Stat.SPIRIT) + ")");
+		charStatsLore.add(ChatColor.AQUA + "" + ChatColor.BOLD + "GEARSCORE: " + ChatColor.WHITE + "" + ChatColor.UNDERLINE + playerData.getGearscore());
 		charStatsMeta.setLore(charStatsLore);
 		charStats.setItemMeta(charStatsMeta);
 		inv.setItem(7, charStats);

@@ -358,6 +358,7 @@ public class GeneralListener implements Listener {
 		InventoryView iv = event.getView();
 		if (event.getWhoClicked() instanceof Player) {
 			final Player player = (Player) event.getWhoClicked();
+			// player.sendMessage("Slot: " + event.getSlot() + " " + event.getRawSlot()); // Slot number shower
 			PlayerData playerData = PlayerData.getData(player);
 			/*
 			if (!ignoreBuffer) {
@@ -860,6 +861,7 @@ public class GeneralListener implements Listener {
 									clickedOn.setItemMeta(clickedOnMeta);
 								} else {
 									event.setCancelled(true);
+									InfernalEffects.playErrorSound(player);
 									player.sendMessage(ChatColor.RESET + "" + ChatColor.RED + "That gem and item aren't class compatible.");
 								}
 							} else if (clickedWith.getItemMeta().getDisplayName().contains("Yellow")) {

@@ -300,6 +300,7 @@ public class InfernalRealms extends JavaPlugin {
 		getCommand("testcolor").setExecutor(new TestingCommands());
 		getCommand("ia").setExecutor(new TestingCommands());
 		getCommand("leavedungeon").setExecutor(new MiscCommands());
+		getCommand("wipeinv").setExecutor(new InventoryCommands());
 		getCommand("stats").setExecutor(new PlayerCommands());
 		getCommand("choose").setExecutor(new PlayerCommands());
 		getCommand("skills").setExecutor(new PlayerCommands());

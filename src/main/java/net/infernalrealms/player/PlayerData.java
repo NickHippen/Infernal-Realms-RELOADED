@@ -174,6 +174,7 @@ public class PlayerData {
 		this.modifySpirit(0);
 		this.modifyStamina(0);
 		this.modifyStrength(0);
+		this.modifyGearscore(0);
 		this.modifyMoney(0);
 	}
 
@@ -1856,6 +1857,7 @@ public class PlayerData {
 		for (Stat stat : Stat.values()) {
 			stats.put(stat, getStatFromEquips(stat));
 		}
+		setGearscore(calculateGearscore());
 		setDirtyEquips(false);
 	}
 
@@ -1909,6 +1911,52 @@ public class PlayerData {
 
 	public int getEquipStat(String stat) {
 		return getEquipStat(Stat.fromName(stat));
+	}
+	
+	public double calculateGearscore() {
+		//@formatter:off
+		ItemStack[] equips = new ItemStack[] { 
+				player.getInventory().getHelmet(), 
+				player.getInventory().getChestplate(),
+				player.getInventory().getLeggings(), 
+				player.getInventory().getBoots(), 
+				player.getInventory().getItem(0)
+				};
+		//@formatter:on
+		double totalScore = 0;
+		for (int i = 0; i < equips.length; i++) {
+			ItemStack equip = equips[i];
+			if (equip == null || equip.getType() == Material.AIR || !equip.getItemMeta().hasLore() || !ItemReader.isEquipable(player, equip)) {
+				continue;
+			}
+			if (i == equips.length - 1) {
+				// Last one
+				if (!WEAPON_TYPES.contains(equip.getType())) {
+					continue;
+				}
+			}
+			//player.sendMessage("Adding " + equip + " to gearscore (" + ItemReader.getItemLevel(equip) + ")" );
+			totalScore += ItemReader.getItemLevel(equip);
+		}
+		//player.sendMessage("Gearscore: " + totalScore / 5);
+		return totalScore / 5;
+	}
+	
+	public double getGearscore() {
+		if (!config.contains(currentCharacterSlot + ".Gearscore"))
+			return 0;
+		return config.getDouble(currentCharacterSlot + ".Gearscore");
+	}
+	
+	public void setGearscore(double value) {
+		config.set(currentCharacterSlot + ".Gearscore", value);
+		saveConfig();
+	}
+	
+	public void modifyGearscore(double value) {
+		if (!config.contains(currentCharacterSlot + ".Gearscore"))
+			setGearscore(0);
+		setGearscore(getLevel() + value);
 	}
 
 	/**

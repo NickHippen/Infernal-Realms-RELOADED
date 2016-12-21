@@ -58,3 +58,5 @@ commands:
     aliases: [iplat, imp]
   ib:
     description: Infernal Blacksmithing Commands
+  wipeinv:
+    description: Wipes all non infernal realms items from your inventory

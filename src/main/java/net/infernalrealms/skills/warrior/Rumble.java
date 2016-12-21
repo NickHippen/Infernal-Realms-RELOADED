@@ -124,19 +124,19 @@ public class Rumble extends ActiveSkill {
 		// Green Dye
 		ItemStack icon = new ItemStack(Material.FLINT, 1, (short) 0);
 		ItemMeta iconMeta = icon.getItemMeta();
-		iconMeta.setDisplayName(PlayerClass.SKILL_INDICATOR + "§5§l" + DISPLAY_NAME + " §7§l[ §7ACTIVE§7§l ]");
+		iconMeta.setDisplayName(PlayerClass.SKILL_INDICATOR + "Â§5Â§l" + DISPLAY_NAME + " Â§7Â§l[ Â§7ACTIVEÂ§7Â§l ]");
 		ArrayList<String> lore = new ArrayList<String>();
-		lore.add("§7Rumbles the ground, knocking back");
-		lore.add("§7surround enemies and dealing");
-		lore.add("§7damage.");
+		lore.add("Â§7Rumbles the ground, knocking back");
+		lore.add("Â§7surround enemies and dealing");
+		lore.add("Â§7damage.");
 		lore.add(" ");
 		if (getLevel() == 0) {
-			lore.add("§c§l[ §r§cLOCKED §l]");
+			lore.add("Â§cÂ§l[ Â§rÂ§cLOCKED Â§l]");
 		} else {
-			lore.add("§a§l[ §aCurrent Level: " + getLevel() + " §l]");
-			lore.add("§7§lMP Cost: §7" + getMpCost());
-			lore.add("§7§lDAMAGE: §7" + (int) (getDamageModifier() * 100) + "%");
-			lore.add("§7§lCOOLDOWN: §7" + getCooldown() + " sec");
+			lore.add("Â§aÂ§l[ Â§aCurrent Level: " + getLevel() + " Â§l]");
+			lore.add("Â§7Â§lMP Cost: Â§7" + getMpCost());
+			lore.add("Â§7Â§lDAMAGE: Â§7" + (int) (getDamageModifier() * 100) + "%");
+			lore.add("Â§7Â§lCOOLDOWN: Â§7" + getCooldown() + " sec");
 		}
 		iconMeta.setLore(lore);
 		icon.setItemMeta(iconMeta);
@@ -148,18 +148,18 @@ public class Rumble extends ActiveSkill {
 		boolean unlocked = level <= this.getLevel();
 		ItemStack icon = new ItemStack(Material.INK_SACK, 1, (short) (unlocked ? 9 : 8));
 		ItemMeta iconMeta = icon.getItemMeta();
-		iconMeta.setDisplayName("§5§l" + DISPLAY_NAME + " §7§l[ §7ACTIVE§7§l ]");
+		iconMeta.setDisplayName("Â§5Â§l" + DISPLAY_NAME + " Â§7Â§l[ Â§7ACTIVEÂ§7Â§l ]");
 		ArrayList<String> lore = new ArrayList<String>();
-		lore.add("§a§l[ §r§aLevel " + level + " Stats §l]");
-		lore.add("§7§lMP COST: §7" + getMpCostAtLevel(level));
-		lore.add("§7§lDAMAGE: §7" + (int) (getDamageModifierAtLevel(level) * 100) + "%");
-		lore.add("§7§lCOOLDOWN: §7" + getCooldownAtLevel(level) + " sec");
-		lore.add("§7§lSP COST: §7" + (level < 7 ? "1" : "2"));
-		lore.add(unlocked ? "§a§l[ §r§aUNLOCKED §l]" : "§c§l[ §r§cLOCKED §l]");
+		lore.add("Â§aÂ§l[ Â§rÂ§aLevel " + level + " Stats Â§l]");
+		lore.add("Â§7Â§lMP COST: Â§7" + getMpCostAtLevel(level));
+		lore.add("Â§7Â§lDAMAGE: Â§7" + (int) (getDamageModifierAtLevel(level) * 100) + "%");
+		lore.add("Â§7Â§lCOOLDOWN: Â§7" + getCooldownAtLevel(level) + " sec");
+		lore.add("Â§7Â§lSP COST: Â§7" + (level < 7 ? "1" : "2"));
+		lore.add(unlocked ? "Â§aÂ§l[ Â§rÂ§aUNLOCKED Â§l]" : "Â§cÂ§l[ Â§rÂ§cLOCKED Â§l]");
 		if (level < this.getLevel()) { // Add Strike
-			iconMeta.setDisplayName("§m" + iconMeta.getDisplayName());
+			iconMeta.setDisplayName("Â§m" + iconMeta.getDisplayName());
 			for (int i = 0; i < lore.size(); i++)
-				lore.set(i, "§m" + lore.get(i));
+				lore.set(i, "Â§m" + lore.get(i));
 		}
 		iconMeta.setLore(lore);
 		icon.setItemMeta(iconMeta);

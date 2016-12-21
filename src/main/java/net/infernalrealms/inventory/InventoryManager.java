@@ -389,5 +389,19 @@ public class InventoryManager {
 			player.getInventory().setItem(i, item);
 		}
 	}
+	
+	public static void wipeInventory(Player player) {
+		Inventory playerInv = player.getInventory();
+		ItemStack air = new ItemStack(Material.AIR);
+		playerInv.setItem(0, air);
+		int counter = 4;
+		while (counter < 40) {
+			playerInv.setItem(counter, air);
+			if (counter == 8 || counter == 17 || counter == 26) {
+				counter += 2;
+			}
+			counter += 1;
+		}
+	}
 
 }

@@ -34,163 +34,163 @@ public class DonationShopGUI implements Listener {
 
 		ItemStack item0 = new ItemStack(Material.GOLD_SWORD, 1, (short) 0);
 		ItemMeta item0Meta = item0.getItemMeta();
-		item0Meta.setDisplayName("§b§l24 Hour Drop Increase");
-		item0Meta.setLore(Arrays.asList("§7§oApplied on purchase", "§7Increase the chance of an item",
-				"§7dropping as well as money by 100%", "§7for 24 hours!", "§7§lPRICE: §b439 §lI.P"));
+		item0Meta.setDisplayName("Â§bÂ§l24 Hour Drop Increase");
+		item0Meta.setLore(Arrays.asList("Â§7Â§oApplied on purchase", "Â§7Increase the chance of an item",
+				"Â§7dropping as well as money by 100%", "Â§7for 24 hours!", "Â§7Â§lPRICE: Â§b439 Â§lI.P"));
 		item0.setItemMeta(item0Meta);
 		inv.setItem(0, item0);
 		ItemStack item1 = new ItemStack(Material.GOLD_SWORD, 1, (short) 0);
 		ItemMeta item1Meta = item1.getItemMeta();
-		item1Meta.setDisplayName("§b§l3 Day Drop Increase");
-		item1Meta.setLore(Arrays.asList("§7§oApplied on purchase", "§7Increase the chance of an item",
-				"§7dropping as well as money by 100%", "§7for 24 hours!", "§7§lPRICE: §b999 §lI.P"));
+		item1Meta.setDisplayName("Â§bÂ§l3 Day Drop Increase");
+		item1Meta.setLore(Arrays.asList("Â§7Â§oApplied on purchase", "Â§7Increase the chance of an item",
+				"Â§7dropping as well as money by 100%", "Â§7for 24 hours!", "Â§7Â§lPRICE: Â§b999 Â§lI.P"));
 		item1.setItemMeta(item1Meta);
 		inv.setItem(1, item1);
 		ItemStack item2 = new ItemStack(Material.BOOK, 1, (short) 0);
 		ItemMeta item2Meta = item2.getItemMeta();
-		item2Meta.setDisplayName("§b§l24 Hour Profession EXP Increase");
-		item2Meta.setLore(Arrays.asList("§7§oApplied on purchase", "§7Increase the amount of EXP gained by all",
-				"§7professions by 25% for 24 hours!", "§7§o(includes mounts and pets)", "§7§lPRICE: §b349 §lI.P"));
+		item2Meta.setDisplayName("Â§bÂ§l24 Hour Profession EXP Increase");
+		item2Meta.setLore(Arrays.asList("Â§7Â§oApplied on purchase", "Â§7Increase the amount of EXP gained by all",
+				"Â§7professions by 25% for 24 hours!", "Â§7Â§o(includes mounts and pets)", "Â§7Â§lPRICE: Â§b349 Â§lI.P"));
 		item2.setItemMeta(item2Meta);
 		inv.setItem(2, item2);
 		ItemStack item3 = new ItemStack(Material.BOOK, 1, (short) 0);
 		ItemMeta item3Meta = item3.getItemMeta();
-		item3Meta.setDisplayName("§b§l3 Day Profession EXP Increase");
-		item3Meta.setLore(Arrays.asList("§7§oApplied on purchase", "§7Increase the amount of EXP gained by all",
-				"§7professions by 25% for 3 days!", "§7§o(includes mounts and pets)", "§7§lPRICE: §b899 §lI.P"));
+		item3Meta.setDisplayName("Â§bÂ§l3 Day Profession EXP Increase");
+		item3Meta.setLore(Arrays.asList("Â§7Â§oApplied on purchase", "Â§7Increase the amount of EXP gained by all",
+				"Â§7professions by 25% for 3 days!", "Â§7Â§o(includes mounts and pets)", "Â§7Â§lPRICE: Â§b899 Â§lI.P"));
 		item3.setItemMeta(item3Meta);
 		inv.setItem(3, item3);
 		ItemStack item4 = new ItemStack(Material.PAPER, 1, (short) 0);
 		ItemMeta item4Meta = item4.getItemMeta();
-		item4Meta.setDisplayName("§b§lEthereal Merchant Coupon");
-		item4Meta.setLore(Arrays.asList("§7§oTradeable", "§7Summons the Shopkeeper menu any-", "§7where in the world. (consumed on use)",
-				"§7§lPRICE: §b25 §lI.P"));
+		item4Meta.setDisplayName("Â§bÂ§lEthereal Merchant Coupon");
+		item4Meta.setLore(Arrays.asList("Â§7Â§oTradeable", "Â§7Summons the Shopkeeper menu any-", "Â§7where in the world. (consumed on use)",
+				"Â§7Â§lPRICE: Â§b25 Â§lI.P"));
 		item4.setItemMeta(item4Meta);
 		inv.setItem(4, item4);
 		ItemStack item5 = new ItemStack(Material.PAPER, 1, (short) 0);
 		ItemMeta item5Meta = item5.getItemMeta();
-		item5Meta.setDisplayName("§b§lEthereal Banker Coupon");
-		item5Meta.setLore(Arrays.asList("§7§oTradeable", "§7Summons your bank anywhere", "§7in the world. (consumed on use)",
-				"§7§lPRICE: §b25 §lI.P"));
+		item5Meta.setDisplayName("Â§bÂ§lEthereal Banker Coupon");
+		item5Meta.setLore(Arrays.asList("Â§7Â§oTradeable", "Â§7Summons your bank anywhere", "Â§7in the world. (consumed on use)",
+				"Â§7Â§lPRICE: Â§b25 Â§lI.P"));
 		item5.setItemMeta(item5Meta);
 		inv.setItem(5, item5);
 		ItemStack item6 = new ItemStack(Material.INK_SACK, 1, (short) 0);
 		ItemMeta item6Meta = item6.getItemMeta();
-		item6Meta.setDisplayName("§6§lPortable Hole");
-		item6Meta.setLore(Arrays.asList("§7Untradeable", "§745 Slot Bag", "§7§lPRICE: §b349 §lI.P"));
+		item6Meta.setDisplayName("Â§6Â§lPortable Hole");
+		item6Meta.setLore(Arrays.asList("Â§7Untradeable", "Â§745 Slot Bag", "Â§7Â§lPRICE: Â§b349 Â§lI.P"));
 		item6.setItemMeta(item6Meta);
 		inv.setItem(6, item6);
 		ItemStack item7 = new ItemStack(Material.MAP, 1, (short) 0);
 		ItemMeta item7Meta = item7.getItemMeta();
-		item7Meta.setDisplayName("§b§lBank Expansion Coupon");
-		item7Meta.setLore(Arrays.asList("§7§oApplied upon purchase", "§7Increases the amount of slots", "§7in your bank by nine.",
-				"§7§lPRICE: §b299 §lI.P"));
+		item7Meta.setDisplayName("Â§bÂ§lBank Expansion Coupon");
+		item7Meta.setLore(Arrays.asList("Â§7Â§oApplied upon purchase", "Â§7Increases the amount of slots", "Â§7in your bank by nine.",
+				"Â§7Â§lPRICE: Â§b299 Â§lI.P"));
 		item7.setItemMeta(item7Meta);
 		inv.setItem(7, item7);
 		ItemStack item8 = new ItemStack(Material.TRIPWIRE_HOOK, 1, (short) 0);
 		ItemMeta item8Meta = item8.getItemMeta();
-		item8Meta.setDisplayName("§a§lUncommon Chest Key");
+		item8Meta.setDisplayName("Â§aÂ§lUncommon Chest Key");
 		item8Meta.setLore(
-				Arrays.asList("§7§oTradeable", "§7Used to open an Uncommon", "§7Mystery chest of any level.", "§7§lPRICE: §b49 §lI.P"));
+				Arrays.asList("Â§7Â§oTradeable", "Â§7Used to open an Uncommon", "Â§7Mystery chest of any level.", "Â§7Â§lPRICE: Â§b49 Â§lI.P"));
 		item8.setItemMeta(item8Meta);
 		inv.setItem(8, item8);
 		ItemStack item9 = new ItemStack(Material.TRIPWIRE_HOOK, 1, (short) 0);
 		ItemMeta item9Meta = item9.getItemMeta();
-		item9Meta.setDisplayName("§9§lRare Chest Key");
+		item9Meta.setDisplayName("Â§9Â§lRare Chest Key");
 		item9Meta.setLore(
-				Arrays.asList("§7§oTradeable", "§7Used to open a Rare", "§7Mystery chest of any level.", "§7§lPRICE: §b149 §lI.P"));
+				Arrays.asList("Â§7Â§oTradeable", "Â§7Used to open a Rare", "Â§7Mystery chest of any level.", "Â§7Â§lPRICE: Â§b149 Â§lI.P"));
 		item9.setItemMeta(item9Meta);
 		inv.setItem(9, item9);
 		ItemStack item10 = new ItemStack(Material.TRIPWIRE_HOOK, 1, (short) 0);
 		ItemMeta item10Meta = item10.getItemMeta();
-		item10Meta.setDisplayName("§5§lEpic Chest Key");
+		item10Meta.setDisplayName("Â§5Â§lEpic Chest Key");
 		item10Meta.setLore(
-				Arrays.asList("§7§oTradeable", "§7Used to open a Epic", "§7Mystery chest of any level.", "§7§lPRICE: §b249 §lI.P"));
+				Arrays.asList("Â§7Â§oTradeable", "Â§7Used to open a Epic", "Â§7Mystery chest of any level.", "Â§7Â§lPRICE: Â§b249 Â§lI.P"));
 		item10.setItemMeta(item10Meta);
 		inv.setItem(10, item10);
 		ItemStack item11 = new ItemStack(Material.WHEAT, 1, (short) 0);
 		ItemMeta item11Meta = item11.getItemMeta();
-		item11Meta.setDisplayName("§a§lSmall Steroids");
-		item11Meta.setLore(Arrays.asList("§7§oTradeable", "§7Instantly feeds your horse 1", "§7unit of feed (no hunger required).",
-				"§7§lPRICE: §b19 §lI.P"));
+		item11Meta.setDisplayName("Â§aÂ§lSmall Steroids");
+		item11Meta.setLore(Arrays.asList("Â§7Â§oTradeable", "Â§7Instantly feeds your horse 1", "Â§7unit of feed (no hunger required).",
+				"Â§7Â§lPRICE: Â§b19 Â§lI.P"));
 		item11.setItemMeta(item11Meta);
 		inv.setItem(11, item11);
 		ItemStack item12 = new ItemStack(Material.WHEAT, 1, (short) 0);
 		ItemMeta item12Meta = item12.getItemMeta();
-		item12Meta.setDisplayName("§9§lMedium Steroids");
-		item12Meta.setLore(Arrays.asList("§7§oTradeable", "§7Instantly feeds your horse 5", "§7unit of feed (no hunger required).",
-				"§7§lPRICE: §b89§l I.P"));
+		item12Meta.setDisplayName("Â§9Â§lMedium Steroids");
+		item12Meta.setLore(Arrays.asList("Â§7Â§oTradeable", "Â§7Instantly feeds your horse 5", "Â§7unit of feed (no hunger required).",
+				"Â§7Â§lPRICE: Â§b89Â§l I.P"));
 		item12.setItemMeta(item12Meta);
 		inv.setItem(12, item12);
 		ItemStack item13 = new ItemStack(Material.WHEAT, 1, (short) 0);
 		ItemMeta item13Meta = item13.getItemMeta();
-		item13Meta.setDisplayName("§5§lLarge Steroids");
-		item13Meta.setLore(Arrays.asList("§7§oTradeable", "§7Instantly feeds your horse 10", "§7unit of feed (no hunger required).",
-				"§7§lPRICE: §b169§l I.P"));
+		item13Meta.setDisplayName("Â§5Â§lLarge Steroids");
+		item13Meta.setLore(Arrays.asList("Â§7Â§oTradeable", "Â§7Instantly feeds your horse 10", "Â§7unit of feed (no hunger required).",
+				"Â§7Â§lPRICE: Â§b169Â§l I.P"));
 		item13.setItemMeta(item13Meta);
 		inv.setItem(13, item13);
 		ItemStack item14 = new ItemStack(Material.IRON_BARDING, 1, (short) 0);
 		ItemMeta item14Meta = item14.getItemMeta();
-		item14Meta.setDisplayName("§a§lIron Horse Armor");
-		item14Meta.setLore(Arrays.asList("§7§oTradeable", "§f+ 10% Speed", "§f+ 5% Jump", "§f+ 5% EXP Bonus", "§7§lPRICE: §b499 §lI.P"));
+		item14Meta.setDisplayName("Â§aÂ§lIron Horse Armor");
+		item14Meta.setLore(Arrays.asList("Â§7Â§oTradeable", "Â§f+ 10% Speed", "Â§f+ 5% Jump", "Â§f+ 5% EXP Bonus", "Â§7Â§lPRICE: Â§b499 Â§lI.P"));
 		item14.setItemMeta(item14Meta);
 		inv.setItem(14, item14);
 		ItemStack item15 = new ItemStack(Material.GOLD_BARDING, 1, (short) 0);
 		ItemMeta item15Meta = item15.getItemMeta();
-		item15Meta.setDisplayName("§9§lGold Horse Armor");
-		item15Meta.setLore(Arrays.asList("§7§oTradeable", "§f+ 15% Speed", "§f+ 10% Jump", "§f+ 10% EXP Bonus", "§7§lPRICE: §b599 §lI.P"));
+		item15Meta.setDisplayName("Â§9Â§lGold Horse Armor");
+		item15Meta.setLore(Arrays.asList("Â§7Â§oTradeable", "Â§f+ 15% Speed", "Â§f+ 10% Jump", "Â§f+ 10% EXP Bonus", "Â§7Â§lPRICE: Â§b599 Â§lI.P"));
 		item15.setItemMeta(item15Meta);
 		inv.setItem(15, item15);
 		ItemStack item16 = new ItemStack(Material.DIAMOND_BARDING, 1, (short) 0);
 		ItemMeta item16Meta = item16.getItemMeta();
-		item16Meta.setDisplayName("§5§lDiamond Horse Armor");
-		item16Meta.setLore(Arrays.asList("§7§oTradeable", "§f+ 20% Speed", "§f+ 15% Jump", "§f+ 15% EXP Bonus", "§7§lPRICE: §b699 §lI.P"));
+		item16Meta.setDisplayName("Â§5Â§lDiamond Horse Armor");
+		item16Meta.setLore(Arrays.asList("Â§7Â§oTradeable", "Â§f+ 20% Speed", "Â§f+ 15% Jump", "Â§f+ 15% EXP Bonus", "Â§7Â§lPRICE: Â§b699 Â§lI.P"));
 		item16.setItemMeta(item16Meta);
 		inv.setItem(16, item16);
 		ItemStack item17 = new ItemStack(Material.SKULL_ITEM, 1, (short) 2);
 		ItemMeta item17Meta = item17.getItemMeta();
-		item17Meta.setDisplayName("§5§lZombie Horse");
+		item17Meta.setDisplayName("Â§5Â§lZombie Horse");
 		item17Meta.setLore(
-				Arrays.asList("§7§oApplied on purchase", "§7A zombie skin for your", "§7horse (cosmetic only).", "§7§lPRICE: §b299 §lI.P"));
+				Arrays.asList("Â§7Â§oApplied on purchase", "Â§7A zombie skin for your", "Â§7horse (cosmetic only).", "Â§7Â§lPRICE: Â§b299 Â§lI.P"));
 		item17.setItemMeta(item17Meta);
 		inv.setItem(17, item17);
 		ItemStack item18 = new ItemStack(Material.SKULL_ITEM, 1, (short) 0);
 		ItemMeta item18Meta = item18.getItemMeta();
-		item18Meta.setDisplayName("§5§lSkeleton Horse");
-		item18Meta.setLore(Arrays.asList("§7§oApplied on purchase", "§7A skeleton skin for your", "§7horse (cosmetic only).",
-				"§7§lPRICE: §b399 §lI.P"));
+		item18Meta.setDisplayName("Â§5Â§lSkeleton Horse");
+		item18Meta.setLore(Arrays.asList("Â§7Â§oApplied on purchase", "Â§7A skeleton skin for your", "Â§7horse (cosmetic only).",
+				"Â§7Â§lPRICE: Â§b399 Â§lI.P"));
 		item18.setItemMeta(item18Meta);
 		inv.setItem(18, item18);
 		ItemStack item19 = new ItemStack(Material.SKULL_ITEM, 1, (short) 1);
 		ItemMeta item19Meta = item19.getItemMeta();
-		item19Meta.setDisplayName("§5§lMule");
+		item19Meta.setDisplayName("Â§5Â§lMule");
 		item19Meta.setLore(
-				Arrays.asList("§7§oApplied on purchase", "§7A mule skin for your", "§7mount (cosmetic only).", "§7§lPRICE: §b299 §lI.P"));
+				Arrays.asList("Â§7Â§oApplied on purchase", "Â§7A mule skin for your", "Â§7mount (cosmetic only).", "Â§7Â§lPRICE: Â§b299 Â§lI.P"));
 		item19.setItemMeta(item19Meta);
 		inv.setItem(19, item19);
 		ItemStack item20 = new ItemStack(Material.LEATHER, 1, (short) 0);
 		ItemMeta item20Meta = item20.getItemMeta();
-		item20Meta.setDisplayName("§5§lTiny Size");
-		item20Meta.setLore(Arrays.asList("§7§oApplied on purchase", "§7Make your horse tiny and", "§7cute! (cosmetic change)",
-				"§7§lPRICE: §b499 §lI.P"));
+		item20Meta.setDisplayName("Â§5Â§lTiny Size");
+		item20Meta.setLore(Arrays.asList("Â§7Â§oApplied on purchase", "Â§7Make your horse tiny and", "Â§7cute! (cosmetic change)",
+				"Â§7Â§lPRICE: Â§b499 Â§lI.P"));
 		item20.setItemMeta(item20Meta);
 		inv.setItem(20, item20);
 		ItemStack item21 = new ItemStack(Material.SKULL_ITEM, 1, (short) 3);
 		ItemMeta item21Meta = item21.getItemMeta();
-		item21Meta.setDisplayName("§b§lNew Character Slot");
-		item21Meta.setLore(Arrays.asList("§7§oApplied on purchase", "§7Unlocks a new character slot.", "§7§lPRICE: §b499 §lI.P"));
+		item21Meta.setDisplayName("Â§bÂ§lNew Character Slot");
+		item21Meta.setLore(Arrays.asList("Â§7Â§oApplied on purchase", "Â§7Unlocks a new character slot.", "Â§7Â§lPRICE: Â§b499 Â§lI.P"));
 		item21.setItemMeta(item21Meta);
 		inv.setItem(21, item21);
 		ItemStack item34 = new ItemStack(Material.EXP_BOTTLE, 1, (short) 0);
 		ItemMeta item34Meta = item34.getItemMeta();
-		item34Meta.setDisplayName("§b§lParticle Effect Manager");
-		item34Meta.setLore(Arrays.asList("§7Manage and equip particles here!"));
+		item34Meta.setDisplayName("Â§bÂ§lParticle Effect Manager");
+		item34Meta.setLore(Arrays.asList("Â§7Manage and equip particles here!"));
 		item34.setItemMeta(item34Meta);
 		inv.setItem(34, item34);
 		ItemStack item35 = new ItemStack(Material.EXP_BOTTLE, 1, (short) 0);
 		ItemMeta item35Meta = item35.getItemMeta();
-		item35Meta.setDisplayName("§b§lParticle Effect Shop");
-		item35Meta.setLore(Arrays.asList("§7Browse and buy particle effects here!"));
+		item35Meta.setDisplayName("Â§bÂ§lParticle Effect Shop");
+		item35Meta.setLore(Arrays.asList("Â§7Browse and buy particle effects here!"));
 		item35.setItemMeta(item35Meta);
 		inv.setItem(35, item35);
 
